@@ -17,6 +17,9 @@ public class Turma {
 	private LocalDate iniciaEm;
 	private LocalDate terminaEm;
 
+	public Turma(String nome, LocalDate iniciaEm, LocalDate finalizaEm) {
+	}
+
 
 	public Long getId() {
 	return id;	}

@@ -60,12 +60,12 @@ public class TurmaRequest {
 
 
 
-	public Turma paraTurma(TurmaRequest request) {
-		
-		this.nome = request.getNome();
+	public Turma paraTurma() {
+		/*this.nome = request.getNome();
 		this.iniciaEm = request.getIniciaEm();
 		this.finalizaEm = request.getFinalizaEm();
-		
-		return new Turma();
+		*/
+		return new Turma(nome, iniciaEm,finalizaEm);
 	}
+
 }

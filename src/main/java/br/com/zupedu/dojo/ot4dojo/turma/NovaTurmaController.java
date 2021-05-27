@@ -23,6 +23,7 @@ public class NovaTurmaController {
 
 		Turma turma = request.paraTurma();
 
+		if(turmaRepository)
 
 		turmaRepository.save(turma);
 		URI Location = builder.path("/turmas/{id}").buildAndExpand(turma.getId()).toUri();
