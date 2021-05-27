@@ -18,7 +18,7 @@ public class UniqueValueValidator implements ConstraintValidator<UniqueValue, Ob
 
     @Override
     public void initialize(UniqueValue constraintAnnotation) {
-        domainAtribute =
+      //  domainAtribute =
     }
 
     @Override
