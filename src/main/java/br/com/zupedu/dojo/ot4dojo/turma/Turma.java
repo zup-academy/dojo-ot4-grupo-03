@@ -1,5 +1,7 @@
 package br.com.zupedu.dojo.ot4dojo.turma;
 
+import java.time.LocalDate;
+
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
@@ -12,9 +14,7 @@ public class Turma {
 	private Long id;
 	
 	private String nome;
-	private LocalDate inicio;
-	private LocalDate terminal;
+	private LocalDate iniciaEm;
+	private LocalDate terminaEm;
 	
-
-
 }
