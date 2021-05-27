@@ -21,17 +21,18 @@ public class NovaTurmaController {
 	@PostMapping
 	public ResponseEntity<?> turmaIniciadaOutraTurma(@RequestBody @Valid  TurmaRequest request,
 													  UriComponentsBuilder builder) {
-
-		Turma turma = request.paraTurma();
-
-		if(turmaRepository.existsByIniciaEm(turma.getIniciaEm())) {
+		
+		if(turmaRepository.existsByIniciaEm(request.getIniciaEm())) {
 			return ResponseEntity.badRequest().build();
 		}
+		Turma turma = request.paraTurma();
+
+		
 
 		turmaRepository.save(turma);
 		URI Location = builder.path("/turmas/{id}").buildAndExpand(turma.getId()).toUri();
 
-		return null;
+		return ResponseEntity.created(Location).build();
 		
 	}
 
