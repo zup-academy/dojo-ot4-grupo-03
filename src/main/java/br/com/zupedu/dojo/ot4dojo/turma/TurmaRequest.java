@@ -1,13 +1,14 @@
 package br.com.zupedu.dojo.ot4dojo.turma;
 
-import javax.persistence.Column;
-import javax.validation.constraints.Max;
-import javax.validation.constraints.NotNull;
 import java.time.LocalDate;
+
+import javax.persistence.Column;
+import javax.validation.constraints.NotNull;
+import javax.validation.constraints.Size;
 
 public class TurmaRequest {
 
-    @Max(value = 50)
+	@Size(max=50)
     private String nome;
 
     @Column(unique = true)
@@ -18,7 +19,7 @@ public class TurmaRequest {
     private LocalDate finalizaEm;
 
 
-	public TurmaRequest(@Max(50) String nome, LocalDate iniciaEm, 
+	public TurmaRequest(String nome, LocalDate iniciaEm, 
 			LocalDate finalizaEm) {
 		super();
 		this.nome = nome;
