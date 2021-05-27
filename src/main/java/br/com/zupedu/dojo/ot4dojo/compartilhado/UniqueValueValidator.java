@@ -25,4 +25,6 @@ public class UniqueValueValidator implements ConstraintValidator<UniqueValue, Ob
     public boolean isValid(Object value, ConstraintValidatorContext context) {
         return false;
     }
+
+
 }
