@@ -27,4 +27,12 @@ public class Turma {
 	public LocalDate getIniciaEm() {
 		return iniciaEm;
 	}
+
+
+	public String getNome() {
+		return nome;
+	}
+
+
+	
 }
