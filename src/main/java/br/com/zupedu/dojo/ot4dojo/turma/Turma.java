@@ -23,4 +23,8 @@ public class Turma {
 
 	public Long getId() {
 	return id;	}
+
+	public LocalDate getIniciaEm() {
+		return iniciaEm;
+	}
 }
